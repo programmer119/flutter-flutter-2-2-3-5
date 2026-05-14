@@ -1,0 +1,381 @@
+:root {
+  color-scheme: light;
+  --bg: #fcfaf7;
+  --ink: #262323;
+  --muted: #766b6b;
+  --line: #f0e6e2;
+  --pink: #e85d75;
+  --blue: #4d96ff;
+  --green: #00a896;
+  --navy: #22223b;
+  --gold: #ffb703;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(232, 93, 117, 0.12), transparent 42%),
+    linear-gradient(315deg, rgba(0, 168, 150, 0.12), transparent 38%),
+    var(--bg);
+  color: var(--ink);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.phone-shell {
+  width: min(430px, 100vw);
+  min-height: min(920px, 100vh);
+  background: var(--bg);
+  padding: 24px 20px 18px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(34, 34, 59, 0.18);
+}
+
+.topbar,
+.profile-heading,
+.section-title,
+.chat,
+.top-actions,
+.actions,
+.panel {
+  display: flex;
+  align-items: center;
+}
+
+.topbar {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.top-actions {
+  gap: 8px;
+}
+
+.top-actions button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: white;
+  background: var(--navy);
+  font-weight: 900;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 22px 0 18px;
+  overflow-x: auto;
+}
+
+.filters button,
+.bottom-nav button {
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: white;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  font-weight: 800;
+}
+
+.filters .active,
+.bottom-nav .active {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: white;
+}
+
+.profile-card {
+  height: 500px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.2) 0 96px, transparent 98px),
+    linear-gradient(140deg, var(--pink), var(--navy));
+  box-shadow: 0 18px 42px rgba(232, 93, 117, 0.24);
+}
+
+.match-badge {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 800;
+}
+
+.avatar {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 184px;
+  height: 184px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 84px;
+  font-weight: 900;
+}
+
+.profile-copy {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+}
+
+.profile-heading {
+  justify-content: space-between;
+  gap: 14px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.job {
+  margin-top: 7px;
+  font-weight: 800;
+}
+
+.profile-copy > p:not(.job) {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.45;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tags span {
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.16);
+  font-weight: 800;
+}
+
+.actions {
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0 22px;
+}
+
+.actions button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.actions .like {
+  width: 72px;
+  height: 72px;
+  background: var(--pink);
+}
+
+.pass {
+  background: #5c6670;
+}
+
+.star {
+  background: var(--gold);
+}
+
+.panel,
+.section,
+.chat {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.panel {
+  gap: 14px;
+  padding: 18px;
+}
+
+.panel-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: #ffe3a3;
+  color: #9a6700;
+  font-size: 24px;
+}
+
+.panel h3,
+.section h3 {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.panel p,
+.chat p {
+  margin-top: 5px;
+  color: var(--muted);
+  line-height: 1.38;
+}
+
+.section {
+  margin-top: 14px;
+  padding: 16px;
+}
+
+.section-title {
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-title span {
+  color: var(--pink);
+  font-weight: 900;
+}
+
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.matches article {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+}
+
+.matches span {
+  color: var(--pink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.mini-avatar {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: 900;
+}
+
+.pink {
+  background: var(--pink);
+}
+
+.blue {
+  background: var(--blue);
+}
+
+.green {
+  background: var(--green);
+}
+
+.chat {
+  gap: 12px;
+  padding: 12px;
+}
+
+.chat > div:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+
+.chat p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.unread {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pink);
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.bottom-nav button {
+  padding-inline: 8px;
+}
+
+@media (max-width: 430px) {
+  body {
+    display: block;
+  }
+
+  .phone-shell {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+
+  .profile-card {
+    height: 480px;
+  }
+}
