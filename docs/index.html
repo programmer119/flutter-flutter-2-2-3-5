@@ -8,103 +8,15 @@
   </head>
   <body>
     <main class="phone-shell" aria-label="Mingle dating app prototype">
-      <section class="topbar">
-        <div>
-          <p class="eyebrow">Flutter dating app sample</p>
-          <h1>Mingle</h1>
-        </div>
-        <div class="top-actions">
-          <button aria-label="알림">⌾</button>
-          <button aria-label="필터">≡</button>
-        </div>
-      </section>
-
-      <nav class="filters" aria-label="추천 필터">
-        <button class="active">추천</button>
-        <button>근처</button>
-        <button>새 가입</button>
-        <button>취향 매칭</button>
-      </nav>
-
-      <section class="profile-card">
-        <div class="match-badge">94% 매칭</div>
-        <div class="avatar">서</div>
-        <div class="profile-copy">
-          <div class="profile-heading">
-            <h2>서윤, 29</h2>
-            <span>1.8km</span>
-          </div>
-          <p class="job">브랜드 마케터</p>
-          <p>
-            주말엔 전시를 보고, 평일 밤에는 재즈 플레이리스트를 정리해요.
-          </p>
-          <div class="tags">
-            <span>전시</span>
-            <span>와인</span>
-            <span>러닝</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="actions" aria-label="카드 액션">
-        <button class="pass" aria-label="패스">×</button>
-        <button class="like" aria-label="좋아요">♥</button>
-        <button class="star" aria-label="슈퍼 좋아요">★</button>
-      </section>
-
-      <section class="panel">
-        <div class="panel-icon">✦</div>
-        <div>
-          <h3>오늘의 추천 포인트</h3>
-          <p>오늘 19:00 이후 활동 중인 후보와 매칭 확률이 높습니다.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-title">
-          <h3>새로운 매칭</h3>
-          <span>3명</span>
-        </div>
-        <div class="matches">
-          <article>
-            <div class="mini-avatar pink">서</div>
-            <strong>서윤</strong>
-            <span>94%</span>
-          </article>
-          <article>
-            <div class="mini-avatar blue">하</div>
-            <strong>하린</strong>
-            <span>89%</span>
-          </article>
-          <article>
-            <div class="mini-avatar green">지</div>
-            <strong>지우</strong>
-            <span>86%</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-title">
-          <h3>채팅</h3>
-          <span>방금</span>
-        </div>
-        <article class="chat">
-          <div class="mini-avatar pink">서</div>
-          <div>
-            <strong>서윤</strong>
-            <p>이번 주말에 성수 전시 같이 볼래요?</p>
-          </div>
-          <span class="unread">2</span>
-        </article>
-      </section>
-
-      <nav class="bottom-nav" aria-label="앱 메뉴">
-        <button class="active">탐색</button>
-        <button>매칭</button>
-        <button>채팅</button>
-        <button>프로필</button>
-      </nav>
+      <section class="topbar"><div><p class="eyebrow">Flutter dating app sample</p><h1>Mingle</h1></div><div class="top-actions"><button aria-label="알림">⌾</button><button aria-label="필터">≡</button></div></section>
+      <nav class="filters" aria-label="추천 필터"><button class="active">추천</button><button>근처</button><button>새 가입</button><button>취향 매칭</button></nav>
+      <section class="profile-card"><div class="match-badge">94% 매칭</div><div class="avatar">서</div><div class="profile-copy"><div class="profile-heading"><h2>서윤, 29</h2><span>1.8km</span></div><p class="job">브랜드 마케터</p><p>주말엔 전시를 보고, 평일 밤에는 재즈 플레이리스트를 정리해요.</p><div class="tags"><span>전시</span><span>와인</span><span>러닝</span></div></div></section>
+      <section class="actions" aria-label="카드 액션"><button class="pass" aria-label="패스">×</button><button class="like" aria-label="좋아요">♥</button><button class="star" aria-label="슈퍼 좋아요">★</button></section>
+      <section class="panel"><div class="panel-icon">✦</div><div><h3>오늘의 추천 포인트</h3><p>오늘 19:00 이후 활동 중인 후보와 매칭 확률이 높습니다.</p></div></section>
+      <section class="section"><div class="section-title"><h3>새로운 매칭</h3><span>3명</span></div><div class="matches"><article><div class="mini-avatar pink">서</div><strong>서윤</strong><span>94%</span></article><article><div class="mini-avatar blue">하</div><strong>하린</strong><span>89%</span></article><article><div class="mini-avatar green">지</div><strong>지우</strong><span>86%</span></article></div></section>
+      <section class="section"><div class="section-title"><h3>채팅</h3><span>방금</span></div><article class="chat"><div class="mini-avatar pink">서</div><div><strong>서윤</strong><p>이번 주말에 성수 전시 같이 볼래요?</p></div><span class="unread">2</span></article></section>
+      <nav class="bottom-nav" aria-label="앱 메뉴"><button class="active">탐색</button><button>매칭</button><button>채팅</button><button>프로필</button></nav>
     </main>
+    <script>(()=>{const p=new URLSearchParams(location.search),m=p.get('potpolio')==='1';if(m){let r=document.head.querySelector('meta[name="robots"]');if(!r){r=document.createElement('meta');r.name='robots';document.head.appendChild(r)}r.content='noindex,nofollow,noarchive,nosnippet';document.documentElement.dataset.presentationMode='portfolio';const k=v=>{try{const u=new URL(v,location.href);if(u.origin!==location.origin)return v;u.searchParams.set('potpolio','1');return u.href}catch{return v}};document.addEventListener('click',e=>{const a=e.target.closest?.('a[href]');if(a&&!a.href.startsWith('javascript:')&&!a.href.startsWith('mailto:')&&!a.href.startsWith('tel:'))a.href=k(a.href)},true);['pushState','replaceState'].forEach(n=>{const o=history[n];history[n]=function(s,t,u){return o.call(this,s,t,u?k(u):u)}});return}const s=document.createElement('script');s.src='./presentation-standard.js';s.defer=true;s.dataset.project='Flutter 모바일 데이팅 앱 프로토타입';s.dataset.caseStudy='dating';document.head.appendChild(s)})();</script>
   </body>
 </html>
